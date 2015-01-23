@@ -30,6 +30,7 @@
 		background: linear-gradient(#283593, #1A237E);
 		display: table;
 		box-shadow: 0rem 2rem 8rem #000;
+		pointer-events: none;
 	}
 	.ae {
 		display: table-cell;
@@ -37,12 +38,13 @@
 		height: 100%;
 		text-align: center;
 		font-family: 'Cubos';
-		font-size: 300rem;
-		color: #FFF;
+		font-size: 170rem;
+		color: rgba(0,0,0,0);
+		text-shadow: 0rem 0rem 0rem #FFF, 0rem 0rem 12rem #FFF;
 		vertical-align: middle;
-		padding-bottom: 20rem;
+		padding-bottom: 40rem;
+		line-height: 300rem;
 		transform: rotate(45deg);
-		text-shadow: 0rem 0rem 12rem #FFF;
 	}
 	.scale {
 		font-size: 14px;
@@ -55,12 +57,13 @@
 </head>
 <body>
 	<div class="scale">
-		Scale: <input id="scale" type="numeric" value="100" onkeyup="rescale();"/><span>%</span>
+		Scale: <input id="scale" type="text" defaultValue="10" onkeyup="rescale();"></input><span>%</span>
 	</div>
 	<div class="outer">
 		<div class="inner">
 			<div class="ae">
-				&aelig;
+				<nobr><span style="position:relative; left:30rem;">&aelig;</span><div style="display: inline-block; position:relative; top:24rem; left:22rem; transform:rotate(90deg);">s</div><span style="position:relative; left:-18rem;">e</span><span style="position:relative; left:-34rem;">n</span></nobr>
+			</div>
 			</span>
 		</div>
 	</div>
